@@ -1,4 +1,11 @@
+<?php
+use clases_pdo\funciones;
+require 'clases/funciones.php';
+$datos = new funciones();
+$result = $datos ->datos();
 
+session_start();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -118,75 +125,18 @@
    	  </nav>
       <div class="portfolio s1" id="portfolio">
 	  <div class="portfolio_box">
+<?php foreach($result as $datos){ 
+?>
 		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="videos.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/1.jpg" class="img-responsive" alt=""/>
+	 	   <a href="mostrarVideo.php?numero=<?php echo $datos['ID']?>" class="b-link-stripe b-animate-go  thickbox" target="_blank">
+			<img src="<?php echo $datos['RUTA']?>" class="img-responsive" alt=""/>
 			</a>
 		</div>
-		<div class="col_1_of_4 span_1_of_4">
-	 	    <a href="videos2.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/2.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
-		<div class="col_1_of_4 span_1_of_4">
-	 	    <a href="videos3.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/3.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
-		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="videos4.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/4.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
+ <?php } ?>
 		<div class="clearfix"> </div>
 	</div>
-	<div class="portfolio_box">
-		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="videos5.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/5.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
-		<div class="col_1_of_4 span_1_of_4">
-	 	    <a href="videos6.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/6.jpg" class="img-responsive" alt=""/>
-		</a>
-		</div>
-		<div class="col_1_of_4 span_1_of_4">
-	 	    <a href="videos7.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/7.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
-		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="videos8.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/8.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	<div class="portfolio_box">
-		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="videos9.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/9.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
-		<div class="col_1_of_4 span_1_of_4">
-	 	    <a href="#" class="b-link-stripe b-animate-go  thickbox">
-			<img src="images/10.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
-		<div class="col_1_of_4 span_1_of_4">
-	 	    <a href="videos11.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/11.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
-		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="videos12.html" class="b-link-stripe b-animate-go  thickbox" target="_blank">
-			<img src="images/12.jpg" class="img-responsive" alt=""/>
-			</a>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-   </div>
+	
+  </div>
  
    	<div class="contact s5" id="contact">
    		<div class="container">
