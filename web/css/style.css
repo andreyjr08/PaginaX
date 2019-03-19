@@ -806,7 +806,7 @@ h3.m_3 {
 	padding:5em 0 3em;
 }
 .header {
- 	min-height:500px;
+ 	min-height:718px;
 }
 .subMenu {
 	top:0px !important;
@@ -879,7 +879,7 @@ p.bottom_desc {
 	padding-top: 1em;
 }
 .header {
-	min-height: 420px;
+	min-height: 583px;
 }
 .wmuSlider.example1 {
 	height: 180px !important;
@@ -932,7 +932,7 @@ h3.m_3, h3.m_4, .contact_left h3{
 	background-size: 97%;
 }
 .header {
-	min-height: 370px;
+	min-height: 551px;
 }
 .wmuSliderPagination {
 	left: 8em;

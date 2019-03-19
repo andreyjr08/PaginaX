@@ -14,15 +14,17 @@ $resu = array();
 
 <html>
 <head>
-    <title></title>
+    <title>video</title>
 </head>
 <body>
-<iframe src="<?php foreach($result as $video){
-                                 echo $video['UBICACION']; 
-                             } 
-?>" frameborder=0 width="100%" height="100%" scrolling=no allowfullscreen=allowfullscreen
+	<div id="contenedor">
+		<iframe src="<?php foreach($result as $video){
+		                                 echo $video['UBICACION']; 
+		                             } 
+		?>" frameborder=0 width="100%" height="50%" scrolling=no allowfullscreen=allowfullscreen
 
-></iframe>
+		></iframe>
+	</div>
 
 </body>
 </html>

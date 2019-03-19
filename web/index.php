@@ -14,11 +14,17 @@ session_start();
 <script src="js/bootstrap.min.js"></script>-->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 
-<script type="text/javascript" language="javascript" src="js/mostrarVideo.js" ></script>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" language="javascript" src="js/mostrarVideo.js" ></script>
+
+
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
@@ -37,9 +43,13 @@ session_start();
 			    	'scrollSpeed' : 1000
 			    });
 			});
-		</script>	
+		</script>
+
 </head>
 <body>
+	<div id="video">
+		
+	</div>
 	<div class="header">
 		<div class="logo">
 			<a href="index.html"><img src="images/logo.png" alt=""/></a>
@@ -123,7 +133,7 @@ session_start();
 <?php foreach($result as $datos){ 
 ?>
 		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="mostrarVideo.php?numero=<?php echo $datos['ID']?>" class="b-link-stripe b-animate-go  thickbox" target="_blank" name="btnEnviarN">
+	 	   <a href="#" id="<?php echo $datos['ID']?>" class="b-link-stripe b-animate-go  thickbox" name="btnEnviarN">
 			<img src="<?php echo $datos['RUTA']?>" class="img-responsive" alt=""/>
 			</a>
 		</div>
