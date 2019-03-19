@@ -13,6 +13,49 @@ html, body{
     font-size: 100%;
     background-color: #FFF;
 }
+/*18-03*/
+.slider{
+	margin: auto;
+	overflow: hidden;
+ 
+	width: 95%;
+}
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 500%;
+ 
+	animation:cambio 20s infinite;
+	animation-direction:alternate;
+}
+.slider li{
+	list-style: none;
+	width: 100%;
+}
+.slider img{
+	width: 100%;
+}
+@keyframes cambio{
+	0%{margin-left: 0;}
+	20%(margin-left: 0;)
+ 
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+ 
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+ 
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+}
+.color{
+	  background-color: rgba(0, 0, 0, .0) !important;
+}
+
+/*---------*/
+
+
+
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -29,7 +72,7 @@ transform: scale(1.2);
 }
 .logo{
 	text-align: center;
-	padding: 2em 0 8em;
+	padding: 1em 0 5em;
 }
 /**** Slider *****/
 .slider_container{

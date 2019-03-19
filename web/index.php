@@ -6,16 +6,17 @@ $result = $datos ->datos();
 
 session_start();
 ?>
-<!DOCTYPE HTML>
 <html>
 <head>
-<title>Shutter Bootstarp Website Template | Home :: w3layouts</title>
+<title>Videos X</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!--<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <script src="js/bootstrap.min.js"></script>-->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript" language="javascript" src="js/mostrarVideo.js" ></script>
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
@@ -44,43 +45,37 @@ session_start();
 			<a href="index.html"><img src="images/logo.png" alt=""/></a>
 		</div>
 	    <div class="slider_container sTop">
-  		<div class="wmuSlider example1">
-			   <div class="wmuSliderWrapper">
-				   <article style="position: absolute; width: 100%; opacity: 0;"> 
-				   	 <div class="banner-wrap">
-				   		 <div class="slider-left">
-						    <h1>Never Stop Photographing</h1>
-							<p class="top_desc">It Is very likely that your best photograph has not yet been captured</p>
-							<p class="bottom_desc">- imperdiet doming</p>
-						 </div>
-					 </div>
-					</article>
-				   <article style="position: relative; width: 100%; opacity: 1;"> 
-				   	 <div class="banner-wrap">
-				   		 <div class="slider-left">
-						    <h1>dolore eu feugiat nulla</h1>
-							<p class="top_desc">It Is very likely that your best photograph has not yet been captured</p>
-							<p class="bottom_desc">- imperdiet doming</p>
-						 </div>
-					 </div>
-				   </article>
-				   <article style="position: absolute; width: 100%; opacity: 0;">
-				   	 <div class="banner-wrap">
-				   		 <div class="slider-left">
-						    <h1>seacula quarta decima</h1>
-							<p class="top_desc">It Is very likely that your best photograph has not yet been captured</p>
-							<p class="bottom_desc">- imperdiet doming</p>
-						 </div>
-					 </div>
-				   </article>
-				</div>
-                <ul class="wmuSliderPagination">
-                	<li><a href="#" class="">0</a></li>
-                	<li><a href="#" class="">1</a></li>
-                	<li><a href="#" class="">2</a></li>
-                </ul>
-                <div class="header_btn"><a class="btn2" href="#"><span>Come Closer</span></a></div>
-              </div>
+    <div class="col-md-12 col-lg-12 col-xs-12">
+        <div id='oculto'  class="col-sm-12 color">
+            <div class="panel-group show col-sm-12 color" id="contenedor">
+                <div class="panel panel-primary color">
+                    <div class="panel-body color">
+                        <div class="form-group color" id="contenido">
+                           <div class="imagen1"></div> 
+
+
+
+<div class="slider">
+			   <ul>
+			   	<li><img src="images/1.jpg"    alt=""></li>
+			   	<li><img src="images/2.jpg"   alt=""></li>
+			   	<li><img src="images/3.jpg"   alt=""></li>
+			   	<li><img src="images/5.jpg"   alt=""></li>
+			   	<li><img src="images/6.jpg"   alt=""></li>
+			   	<li><img src="images/7.jpg"   alt=""></li>
+			   	<li><img src="images/8.jpg"   alt=""></li>
+			   	<li><img src="images/9.jpg"   alt=""></li>
+			   	<li><img src="images/10.jpg"   alt=""></li>
+			   	<li><img src="images/11.jpg"   alt=""></li>
+			   	<li><img src="images/12.jpg"   alt=""></li>
+			   </ul>
+			   </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
               <script src="js/jquery.wmuSlider.js"></script> 
 				 <script>
        			   $('.example1').wmuSlider();         
@@ -128,7 +123,7 @@ session_start();
 <?php foreach($result as $datos){ 
 ?>
 		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="mostrarVideo.php?numero=<?php echo $datos['ID']?>" class="b-link-stripe b-animate-go  thickbox" target="_blank">
+	 	   <a href="mostrarVideo.php?numero=<?php echo $datos['ID']?>" class="b-link-stripe b-animate-go  thickbox" target="_blank" name="btnEnviarN">
 			<img src="<?php echo $datos['RUTA']?>" class="img-responsive" alt=""/>
 			</a>
 		</div>
@@ -138,40 +133,8 @@ session_start();
 	
   </div>
  
-   	<div class="contact s5" id="contact">
-   		<div class="container">
-   			<div class="row">
-   				<div class="col-md-8 contact_left">
-   					<h3>We Want to hear from you</h3>
-   					<p class="m_6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla</p>
-   					<p class="m_7">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla</p>
-   					<ul class="contact_info">
-			  	<li><i class="pin"> </i><span>Lorem ipsum dolor sit amet, consectetuer <br>adipiscing elit, sed diam nonummy nibh euismod</span></li>
-			  	<li><i class="mobile"> </i><span>Tell: +1-900-235-2456<br>Fax: +1-900-235-2456</span></li>
-			  	<li><i class="message"> </i><span class="msg">info(at)shutter.com</span></li>
-			  </ul>
-   				</div>
-   				<div class="col-md-4">
-   					<div class="contact_right">
-   				<div class="contact-form_grid">
-				   <form method="post" action="contact-post.html">
-					 <input type="text" class="textbox" value="Your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your name';}">
-					 <input type="text" class="textbox" value="Your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email';}">
-					 <input type="text" class="textbox" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
-					 <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
-					 <input type="submit" value="Send">
-				   </form>
-			      </div>
-   			     </div>
-   				</div>
-   			</div>
-   		</div>
-   	</div>
    	<div class="footer">
    		<div class="container">
-   			<div class="copy">
-		       <p>&copy; 2014 Template by <a href="http://w3layouts.com" target="_blank"> w3layouts</a></p>
-		    </div>
 		    <div class="social">	
 		      <ul>	
 			   <li class="facebook"><a href="#"><span> </span></a></li>
