@@ -9,7 +9,7 @@ class funciones{
     }
         public function datos(){
         $pdo = $this->pdo;
-        $sql = "SELECT v.ID, v.UBICACION, v.MINIATURA_ID,m.RUTA FROM videos v INNER JOIN miniatura m ON v.MINIATURA_ID = m.ID";
+        $sql = "SELECT v.ID, v.UBICACION, v.MINIATURA_ID, v.DESCRIPCION, v.DURACION,m.RUTA FROM videos v INNER JOIN miniatura m ON v.MINIATURA_ID = m.ID";
         $query = $pdo->query($sql);
         $queryResult = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $queryResult;

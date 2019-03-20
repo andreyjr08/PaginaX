@@ -52,7 +52,7 @@ session_start();
 	</div>
 	<div class="header">
 		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""/></a>
+			<a href="index.php"><img src="images/logo3.jpeg" alt=""/></a>
 		</div>
 	    <div class="slider_container sTop">
     <div class="col-md-12 col-lg-12 col-xs-12">
@@ -107,19 +107,10 @@ session_start();
 	                        <a id="sTop" class="subNavBtn active" href="#">Home</a>
 	                    </li>
 	                    <li class="page-scroll">
-	                        <a id="s1" class="subNavBtn" href="#">Portfolio</a>
+	                        <a class="subNavBtn" >Categories</a>
 	                    </li>
 	                    <li class="page-scroll">
-	                        <a id="s5" class="subNavBtn" href="#">Services</a>
-	                    </li>
-	                    <li class="page-scroll">
-	                        <a id="s5" class="subNavBtn" href="#">Sign Up</a>
-	                    </li>
-	                   <li class="page-scroll">
-	                        <a id="s5" class="subNavBtn" href="#">About</a>
-	                    </li>
-	                    <li class="page-scroll">
-	                        <a id="s5" class="subNavBtn" href="#">Contact</a>
+	                        <a class="subNavBtn" >Contact</a>
 	                    </li>
 	                </ul>
 	            </div>
@@ -136,6 +127,8 @@ session_start();
 	 	   <a href="#" id="<?php echo $datos['ID']?>" class="b-link-stripe b-animate-go  thickbox" name="btnEnviarN">
 			<img src="<?php echo $datos['RUTA']?>" class="img-responsive" alt=""/>
 			</a>
+			<h1><?php echo $datos['DESCRIPCION']?></h1>
+			<div class="time"><?php echo $datos['DURACION']?></div>
 		</div>
  <?php } ?>
 		<div class="clearfix"> </div>

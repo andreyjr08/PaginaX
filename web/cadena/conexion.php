@@ -2,10 +2,10 @@
 namespace clases_pdo;
 class config extends \PDO{
     private $typeDB = 'mysql';
-    private $host = 'bd4free.net';
-    private $dbname = 'paginax';
-    private $userDB = 'andrey08';
-    private $passwordDB = 'andrey1998';
+    private $host = 'localhost';
+    private $dbname = 'paginaX';
+    private $userDB = 'root';
+    private $passwordDB = '';
     
     public function __construct(){
         try {
