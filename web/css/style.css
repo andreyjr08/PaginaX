@@ -7,8 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 h4, h5, h6,
 h1, h2, h3 {
 	margin-top: 4;
-	font-family: sans-serif;
-	font-size: 16px;
+	font-family: 'COMIC';
+	font-size: 20px;
+		color: #ffffff;
+
 }
 ul, ol {margin: 0;}
 p {margin: 0;}
@@ -16,6 +18,18 @@ html, body{
    font-family: 'Lato', sans-serif;
     font-size: 100%;
     background-color: #FFF;
+}
+@font-face {
+    font-family: 'AGENCY';
+    src: url("fonts/AGENCY.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'COMIC';
+    src: url("fonts/AGENCY.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 .time{
 	background-color: #566573 !important;
@@ -81,11 +95,10 @@ transform: scale(1.2);
 }
 .header{
 	background:url(../images/bg.png);
-	min-height:819px;
 }
 .logo{
 	text-align: center;
-	padding: 1em 0 5em;
+	padding: 6em 0 5em;
 }
 /**** Slider *****/
 .slider_container{
@@ -237,9 +250,6 @@ p.bottom_desc{
 .col_1_of_4 {
 	display: block;
 	float: left;
-}
-.portfolio{
-	border-top:4px solid #35353f;
 }
 /* Self Clearing Goodness */
 /*	Strip
@@ -815,9 +825,6 @@ h3.m_3 {
 .logo {
 	padding:5em 0 3em;
 }
-.header {
- 	min-height:718px;
-}
 .subMenu {
 	top:0px !important;
 	padding:5px 0;
@@ -873,7 +880,7 @@ p.top_desc {
 	display: none;
 }
 .logo {
-	padding: 5em 0 2em;
+	padding: 6em 0 1em;
 }
 p.bottom_desc {
 	margin-top: 1em;
@@ -887,9 +894,6 @@ p.bottom_desc {
 }
 .header_btn {
 	padding-top: 1em;
-}
-.header {
-	min-height: 583px;
 }
 .wmuSlider.example1 {
 	height: 180px !important;
@@ -939,9 +943,6 @@ h3.m_3, h3.m_4, .contact_left h3{
 	font-size: 12px;
 	background-size: 97%;
 }
-.header {
-	min-height: 551px;
-}
 .wmuSliderPagination {
 	left: 8em;
 }
@@ -975,60 +976,63 @@ h3.m_3, h3.m_4, .contact_left h3 {
 @media (max-width: 320px) {
     .span_1_of_4 {
 	width:50%;
-	height: 50%;
+	height: 17em;
+}
+.panel-group{
+	margin-bottom: 15% !important;
 }
 }
 @media screen and (min-width:321px) and (max-width:719px) {
-  .span_1_of_4 {
+  	.span_1_of_4 {
 	width:50%;
-	height: 60%;
+	height: 17em;
 }
 }
 @media screen and (min-width:720px) and (max-width:767px) {
    .span_1_of_4 {
 	width:50%;
-	height: 80%;
+	height: 17em;
 }
 }
 @media screen and (min-width:768px) and (max-width:1023px) {
-     .span_1_of_4 {
+    .span_1_of_4 {
 	width:25%;
-	height: 60%;
+	height: 17em;
 }
 }
 @media screen and (min-width:1024px) and (max-width:1279px) {
-       .span_1_of_4 {
+    .span_1_of_4 {
 	width:25%;
-	height: 70%;
+	height: 20em;
 }
 }
 @media screen and (min-width:1280px) and (max-width:1365px) {
-         .span_1_of_4 {
+    .span_1_of_4 {
 	width:25%;
-	height: 75%;
+	height: 25em;
 }
 }
-@media screen and (min-width:1367px) and (max-width:1439px) {
-          .span_1_of_4 {
+@media screen and (min-width:1366px) and (max-width:1439px) {
+    .span_1_of_4 {
 	width:25%;
-	height: 80%;
+	height: 35em;
 }
 }
 @media screen and (min-width:1440px) and (max-width:1599px) {
-           .span_1_of_4 {
+    .span_1_of_4 {
 	width:25%;
-	height: 85%;
+	height: 35rem;
 }
 }
 @media screen and (min-width:1600px) and (max-width:1679px) {
-          .span_1_of_4 {
+    .span_1_of_4 {
 	width:25%;
-	height: 90%;
+	height: 40em;
 }
 }
 @media screen and (min-width:1920px) {
-         .span_1_of_4 {
+    .span_1_of_4 {
 	width:25%;
-	height: 100%;
+	height: 45em;
 }
 }

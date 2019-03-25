@@ -3,7 +3,6 @@ use clases_pdo\funciones;
 require 'clases/funciones.php';
 $datos = new funciones();
 $result = $datos ->datos();
-
 session_start();
 ?>
 <html>
@@ -47,10 +46,35 @@ session_start();
 
 </head>
 <body>
-	<div id="video">
-		
 	</div>
 	<div class="header">
+			<nav class="subMenu navbar-custom navbar-scroll-top smint" role="navigation">
+	        <div class="container">
+	            <div class="navbar-header page-scroll">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse">
+	                    <img src="images/nav-icon.png" title="drop-down-menu"> 
+	                </button>
+	            </div>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="navbar-collapse navbar-left navbar-main-collapse collapse" >
+	                <ul class="nav navbar-nav">
+	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+	                    <li class="active">
+	                        <a id="sTop" class="subNavBtn active" href="#">Home</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a class="subNavBtn" >Categories</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a class="subNavBtn" >Contact</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	 
+	        </div>
+	        <!-- /.container -->
+   	  </nav>
 		<div class="logo">
 			<a href="index.php"><img src="images/logo3.jpeg" alt=""/></a>
 		</div>
@@ -91,40 +115,15 @@ session_start();
        			   $('.example1').wmuSlider();         
    			     </script> 	           	     
    	     </div>    
-	</div>  
-	<nav class="subMenu navbar-custom navbar-scroll-top smint" role="navigation" style="position: absolute; top: 737px;">
-	        <div class="container">
-	            <div class="navbar-header page-scroll">
-	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse">
-	                    <img src="images/nav-icon.png" title="drop-down-menu"> 
-	                </button>
-	            </div>
-	            <!-- Collect the nav links, forms, and other content for toggling -->
-	            <div class="navbar-collapse navbar-left navbar-main-collapse collapse" style="height: 1px;">
-	                <ul class="nav navbar-nav">
-	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-	                    <li class="active">
-	                        <a id="sTop" class="subNavBtn active" href="#">Home</a>
-	                    </li>
-	                    <li class="page-scroll">
-	                        <a class="subNavBtn" >Categories</a>
-	                    </li>
-	                    <li class="page-scroll">
-	                        <a class="subNavBtn" >Contact</a>
-	                    </li>
-	                </ul>
-	            </div>
-	            <!-- /.navbar-collapse -->
-	 
-	        </div>
-	        <!-- /.container -->
-   	  </nav>
-      <div class="portfolio s1" id="portfolio">
+ 
+
+
+   	    	 <div class="portfolio s1" id="portfolio">
 	  <div class="portfolio_box">
 <?php foreach($result as $datos){ 
 ?>
 		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="#" id="<?php echo $datos['ID']?>" class="b-link-stripe b-animate-go  thickbox" name="btnEnviarN">
+	 	   <a href="#" id="<?php echo $datos['ID']?>" class="b-li nk-stripe b-animate-go  thickbox video" name="btnEnviarN">
 			<img src="<?php echo $datos['RUTA']?>" class="img-responsive" alt=""/>
 			</a>
 			<h1><?php echo $datos['DESCRIPCION']?></h1>
@@ -135,6 +134,9 @@ session_start();
 	</div>
 	
   </div>
+
+   	  	</div>  
+
  
    	<div class="footer">
    		<div class="container">

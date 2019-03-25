@@ -5,11 +5,11 @@ use clases_pdo\funciones;
 require_once('clases/funciones.php');
 $resu = array();
         $id = $_GET['numero'];
-        $ins = new funciones();
+       	$ins = new funciones();
         $result = $ins->video($id);
+       }
 
 
- }
 ?>
 
 <html>

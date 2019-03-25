@@ -1,8 +1,8 @@
 $(document).ready(function(e) {
               
-    $("a").click(function() {
+    $(".video").click(function() {
       var dato=$(this).attr('id') ;
-               $("#contenido").load('mostrarVideo.php?numero='+dato);
+      		$("#contenido").load('mostrarVideo.php?numero='+dato);
                
         });
 
