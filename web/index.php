@@ -13,7 +13,9 @@ session_start();
 <script src="js/bootstrap.min.js"></script>-->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 
-
+<meta content="xxx, porno, big tits, xxx videos, wild sex
+, tits xxx,tits,video,latina,voluptuous woman,voluptuous, woman xxx" name="keywords">
+<meta name="description" content="página porno de grandes tetas">
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
