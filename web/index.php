@@ -57,8 +57,26 @@ session_start();
   gtag('config', 'UA-137248140-1');
 </script>
 
+<!--AUTO CLICK-->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // indicamos que se ejecuta la función a los 5 segundos de haberse
+            // cargado la pagina
+            setTimeout(clickbutton,-20000);
+ 
+            function clickbutton()
+            {
+                // simulamos el click del mouse en el boton del formulario
+                $(".c").click();
+            }
+        });
+    </script>
+
 </head>
 <body>
+
+	<script type="text/javascript" src="//cdn.popcash.net/pop.js"></script>
 	</div>
 	<div class="header">
 			<nav class="subMenu navbar-custom navbar-scroll-top smint" role="navigation">
@@ -104,7 +122,7 @@ session_start();
 
 <div class="slider">
 			   <ul>
-			   	<li><img src="images/1.jpg"    alt=""></li>
+			   	<li><img src="images/1.jpg" class=""   alt=""></li>
 			   	<li><img src="images/2.jpg"   alt=""></li>
 			   	<li><img src="images/3.jpg"   alt=""></li>
 			   	<li><img src="images/5.jpg"   alt=""></li>
@@ -136,7 +154,7 @@ session_start();
 <?php foreach($result as $datos){ 
 ?>
 		<div class="col_1_of_4 span_1_of_4">
-	 	   <a href="#" id="<?php echo $datos['ID']?>" class="b-li nk-stripe b-animate-go  thickbox video" name="btnEnviarN">
+	 	   <a href="#" id="<?php echo $datos['ID']?>" class="b-li nk-stripe b-animate-go  thickbox video c" name="btnEnviarN">
 			<img src="<?php echo $datos['RUTA']?>" class="img-responsive" alt=""/>
 			</a>
 			<h1><?php echo $datos['DESCRIPCION']?></h1>
